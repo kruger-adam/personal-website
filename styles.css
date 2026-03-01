@@ -306,6 +306,11 @@ img {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
+.project-card--featured {
+  border-color: var(--color-accent);
+  border-width: 2px;
+}
+
 .project-image {
   aspect-ratio: 16 / 10;
   overflow: hidden;
