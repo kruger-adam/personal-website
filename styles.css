@@ -385,6 +385,7 @@ img {
 
 .constellation-center img {
   width: 180px;
+  min-width: 180px;
   height: 180px;
   aspect-ratio: 1;
   border-radius: 50%;
