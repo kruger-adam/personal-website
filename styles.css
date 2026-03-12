@@ -191,6 +191,10 @@ img {
   font-style: italic;
 }
 
+.hero-subtitle a {
+  font-weight: 600;
+}
+
 .hero-cta {
   display: flex;
   gap: var(--space-md);
