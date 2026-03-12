@@ -358,6 +358,7 @@ img {
   position: relative;
   width: 300px;
   height: 300px;
+  aspect-ratio: 1;
 }
 
 .constellation-lines {
@@ -402,18 +403,25 @@ img {
   border: 1.5px solid var(--color-border);
   border-radius: 50%;
   font-size: 1.2rem;
-  color: var(--color-text-muted);
   transform: translate(-50%, -50%);
   transition: all 0.3s ease;
   z-index: 2;
 }
 
+/* Brand colors */
+.constellation-node[data-index="0"] { color: #0A66C2; } /* LinkedIn */
+.constellation-node[data-index="1"] { color: #333; }    /* GitHub */
+.constellation-node[data-index="2"] { color: #000; }    /* Medium */
+.constellation-node[data-index="3"] { color: #E1306C; } /* Photography/Instagram pink */
+.constellation-node[data-index="4"] { color: #4a7c59; } /* Barkscapes/tree green */
+.constellation-node[data-index="5"] { color: #553B08; } /* Goodreads */
+.constellation-node[data-index="6"] { color: #FC4C02; } /* Strava */
+
 .constellation-node:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
+  border-color: currentColor;
   background: var(--color-bg-alt);
   transform: translate(-50%, -50%) scale(1.2);
-  box-shadow: 0 4px 16px rgba(196, 92, 62, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .contact-links {
