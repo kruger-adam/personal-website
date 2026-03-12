@@ -244,39 +244,6 @@ img {
   letter-spacing: -0.02em;
 }
 
-/* ===== About ===== */
-.about-content p {
-  max-width: 40rem;
-  margin-bottom: var(--space-lg);
-  color: var(--color-text-muted);
-}
-
-.skills {
-  margin-top: var(--space-2xl);
-}
-
-.skills h3 {
-  font-family: var(--font-heading);
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: var(--space-md);
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-  list-style: none;
-}
-
-.skills-list li {
-  padding: var(--space-sm) var(--space-md);
-  background: var(--color-bg-alt);
-  border-radius: var(--radius);
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 /* ===== Projects ===== */
 .projects {
   background: var(--color-bg-alt);
