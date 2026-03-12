@@ -512,12 +512,20 @@ img {
   }
 
   .hero-layout {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-lg);
   }
 
-  .hero-avatar img {
-    width: 160px;
-    height: 160px;
+  .hero-avatar {
+    order: -1;
+    flex-shrink: 0;
+    padding-top: var(--space-sm);
+  }
+
+  .hero-content {
+    min-width: 0;
   }
 
   .projects-grid {
@@ -531,9 +539,9 @@ img {
   }
 
   .constellation-center img {
-    width: 160px;
-    min-width: 160px;
-    height: 160px;
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
   }
 
   .constellation-node,
