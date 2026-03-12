@@ -394,9 +394,13 @@ img {
 }
 
 .contact-links {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   gap: var(--space-xl);
+}
+
+.contact-links-mobile {
+  display: none;
 }
 
 .contact-link {
@@ -505,6 +509,11 @@ img {
     margin: 0 auto;
   }
 
+  .constellation-center {
+    position: static;
+    transform: none;
+  }
+
   .constellation-center img {
     width: 80px;
     min-width: 80px;
@@ -516,7 +525,11 @@ img {
     display: none;
   }
 
-  .contact-links {
+  .contact-links-desktop {
+    display: none;
+  }
+
+  .contact-links-mobile {
     display: flex;
   }
 }
