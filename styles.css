@@ -359,24 +359,76 @@ img {
 .contact-intro {
   max-width: 36rem;
   color: var(--color-text-muted);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xl);
+.constellation {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
 }
 
-.contact-link {
+.constellation-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.constellation-lines line {
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+  transition: stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+.constellation-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.constellation-center img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-border);
+  transition: border-color 0.3s ease;
+}
+
+.constellation-node {
+  position: absolute;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 2rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: var(--space-sm) 0;
-  border-bottom: 2px solid transparent;
-  transition: border-color var(--transition);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
-.contact-link:hover {
-  border-bottom-color: var(--color-accent);
+.constellation-node:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-bg-alt);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 4px 16px rgba(196, 92, 62, 0.15);
+}
+
+.constellation-node:hover ~ .constellation-lines line,
+.constellation-node:hover + .constellation-lines line {
+  stroke: var(--color-accent);
 }
 
 /* ===== Footer ===== */
@@ -454,5 +506,27 @@ img {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .constellation {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+  }
+
+  .constellation-lines,
+  .constellation-center {
+    display: none;
+  }
+
+  .constellation-node {
+    position: static;
+    transform: none;
+  }
+
+  .constellation-node:hover {
+    transform: scale(1.1);
   }
 }
