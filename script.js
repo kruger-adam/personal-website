@@ -59,8 +59,9 @@ function layoutConstellation() {
   const h = container.offsetHeight;
   const cx = w / 2;
   const cy = h / 2;
-  const rx = Math.min(w, 500) * 0.4;
-  const ry = Math.min(h, 400) * 0.38;
+  const radius = Math.min(w, h) * 0.42;
+  const rx = radius;
+  const ry = radius;
   const startAngle = -Math.PI / 2;
 
   // Position nodes in an ellipse
