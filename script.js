@@ -59,7 +59,7 @@ function layoutConstellation() {
   const h = container.offsetHeight;
   const cx = w / 2;
   const cy = h / 2;
-  const radius = Math.min(w, h) * 0.42;
+  const radius = Math.min(w, h) * 0.46;
   const rx = radius;
   const ry = radius;
   const startAngle = -Math.PI / 2;
