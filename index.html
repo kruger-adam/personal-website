@@ -21,6 +21,7 @@
       </button>
       <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#podcast-history">Listening</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -105,6 +106,19 @@
         <article class="project-card">
           <div class="project-info">
             <div class="project-header">
+              <h3>Podcast History</h3>
+            </div>
+            <p>A shareable page that tracks what I've been listening to. Connects to Pocket Casts and syncs automatically every 12 hours—public profile with stats, episode notes, and playback history.</p>
+            <div class="project-links">
+              <a href="https://podcast-history-app.vercel.app/u/adamkruger" target="_blank" rel="noopener">My listening history</a>
+              <a href="https://podcast-history-app.vercel.app" target="_blank" rel="noopener">Try it</a>
+              <a href="https://github.com/kruger-adam/podcast-history-app" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-info">
+            <div class="project-header">
               <img class="project-logo" src="images/logos/podcast.png" alt="Adam Kruger Podcast" onerror="this.style.display='none'" />
               <h3>Adam Kruger Podcast</h3>
             </div>
@@ -126,6 +140,17 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section id="podcast-history" class="section podcast-history">
+      <h2 class="section-title">What I'm Listening To</h2>
+      <p class="podcast-history-intro">My full podcast history, synced from Pocket Casts every 12 hours. <a href="https://podcast-history-app.vercel.app/u/adamkruger" target="_blank" rel="noopener">Open full page ↗</a></p>
+      <iframe
+        src="https://podcast-history-app.vercel.app/u/adamkruger"
+        class="podcast-history-frame"
+        title="Adam Kruger's Podcast History"
+        loading="lazy"
+      ></iframe>
     </section>
 
     <section id="contact" class="section contact">

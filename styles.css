@@ -314,6 +314,30 @@ img {
   font-weight: 500;
 }
 
+/* ===== Podcast History ===== */
+.podcast-history {
+  background: var(--color-bg-alt);
+}
+
+.podcast-history-intro {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.podcast-history-frame {
+  width: 100%;
+  height: 720px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+  .podcast-history-frame {
+    height: 600px;
+  }
+}
+
 /* ===== Contact ===== */
 .contact-intro {
   max-width: 36rem;
