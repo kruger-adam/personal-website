@@ -409,6 +409,7 @@ img {
 .constellation-node[data-index="4"] { color: #4a7c59; } /* Barkscapes/tree green */
 .constellation-node[data-index="5"] { color: #553B08; } /* Goodreads */
 .constellation-node[data-index="6"] { color: #FC4C02; } /* Strava */
+.constellation-node[data-index="7"] { color: #8B5CF6; } /* Podcast History */
 
 .constellation-node:hover {
   border-color: currentColor;
